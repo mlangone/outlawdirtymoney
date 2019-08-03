@@ -1,0 +1,127 @@
+/*=============================================
+=            Footer Styleshet                 =
+=============================================*/
+footer.footer{
+    background: $black;
+    height: auto;
+    padding-top: 2rem; padding-bottom: 1rem;
+    .menu > a {
+        color: $white;
+    }
+    hr.seperator{
+        color: $white;
+    }
+    p.source-org.copyright {
+        font-size: 14px;
+        color: $white;
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+    #footerCTA{
+        font-size: 16px;
+        font-weight: 500;
+    }
+.footer-main-logo{
+    @include breakpoint(tablet){
+        width: 102px
+    }
+
+}
+ul#footer-links > li > a {
+    font-size: 14px;
+}
+ul#company-links > li > a {
+    font-size: 14px;
+}
+a.footer-main-logo img {
+    width: 102px;
+}
+
+a.footer-main-logo {
+    padding: 0;
+}
+
+.footer-logo nav.menu {align-items: baseline;     justify-content: space-evenly;}    
+nav.menu.company-Links {
+    align-items: baseline;
+}
+ul#company-links > li > a {
+    border-left: solid 1px $odm-red;
+    padding: 0 1rem;
+}
+.button.yellow.footer {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    a {
+        color: $black;
+        font-weight: 900;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+ul#social > li.social-icon{
+    // width: 24px; height: 24px;
+}
+
+ul#social {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    text-align: right;
+    max-height: 24px;
+    li.social-icon {
+        display: inline-flex;
+        a{
+            padding: 0;
+            margin: 0;
+        }
+        a.icon-twitter{
+            background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160159/Twitter.svg');
+            width: 32px;
+            height: 32px;
+            background-position: center;
+            background-size: contain;
+        }
+        a.icon-linkedin{
+            background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160224/Linkedin.svg');
+            width: 32px;
+            height: 32px;
+            background-position: center;
+            background-size: contain;
+        }
+        a.icon-google{
+            background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160234/Google.svg');
+            width: 32px;
+            height: 32px;
+            background-position: center;
+            background-size: contain;
+        }
+        a.icon-facebook{
+            background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160559/Facebook.svg');
+            width: 32px;
+            height: 32px;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+}
+/* Media Query */
+    @include breakpoint(large down) {
+        // height: 603px;
+        // padding-top: 4.444rem; padding-bottom: 2rem;
+        footer.footer ul#social {
+            margin: 0;
+            width: 80%;
+            -ms-flex-align: center;
+            align-items: center;
+            /* text-align: right; */
+            max-height: 24px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

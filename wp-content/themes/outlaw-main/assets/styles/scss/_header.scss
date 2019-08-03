@@ -1,0 +1,220 @@
+/*=============================================
+=            Header SCSS            =
+=============================================*/
+
+.pattern-hero{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    @include hecs-dark-gradient;
+    height: 100%;
+    max-height: 541px;
+    @include breakpoint(tablet){
+        height: 100%;
+        max-height: 757px;
+    }
+    .the-pattern{
+        background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/22183429/Topography-Pattern.png');
+        width: 100%;
+        height: 100%;
+        opacity: .025;
+        background-size: contain;
+    }
+}
+
+header.header{
+    position: absolute;
+    background: transparent;
+    z-index: 999999;
+    width: 100%;
+    a.main-logo img {
+        width: 17vw;
+        max-width: 230px;
+    }
+    @include breakpoint (tablet down){
+        background: $black;
+        padding: 1.5rem;
+    }
+
+    #mainTopBar{
+        .set-height{
+            @include breakpoint(tablet){
+                height: 160px;
+            }
+        }
+    }
+    #mega-menu-wrap-main-nav #mega-menu-main-nav .white-box-hover p {
+        margin-bottom: 0;
+    }
+    #mega-menu-wrap-main-nav #mega-menu-main-nav > li.mega-menu-item {
+        .textwidget.custom-html-widget a {
+            color: rgba(0, 0, 0, 0.70);
+        }
+    }
+    .white-box-hover {
+        padding: .5rem;
+        font-size: 14px;
+        a{
+            color: rgba(0, 0, 0, 0.70);
+        }
+        p strong {
+            font-weight: 900 !important;
+            font-size: 17px;
+            color: $black !important;
+        }
+        &:hover {
+            box-shadow: $base-box-shadow;
+            border-radius: 8px;
+        }
+        .coming-soon {
+            display: flex;
+            align-items: normal;
+            justify-content: space-between;
+            width: 100%;
+            a.button.small.yellow {
+                padding: 2px 5px;
+                color: $black !important;
+                font-size: 11px;
+                text-transform: uppercase;
+                display: inline-flex;
+                text-align: right;
+                margin-left: 15px;
+                margin-top: -2px;
+            }
+        }
+    }
+    ul#main-nav.menu .active>a, ul#main-nav.menu .is-active>a {
+        background: transparent;
+        color: #fff;
+    }
+    ul#main-nav.menu > li > a{
+        font-weight:500;
+    }
+    .dropdown.menu>li>a {
+        padding: .7rem 1rem;
+        font-weight: 700;
+    }
+    ul#main-nav {
+        align-items: baseline;
+    }
+
+    li.button.alt.donate {
+        border: solid 2px;
+        margin-left: 1rem;
+        a{
+            font-size: 1.250rem;
+            text-transform: uppercase;
+        }
+    }
+}
+.forminator-ui.forminator-custom-form-130.forminator-design--material .forminator-select-container .forminator-select-list .forminator-value {
+    color: #ffffff !important;
+}
+// Hamburger Over Rides
+.menu-button {
+    display: inline-block;
+    padding: .5em;
+  
+  }
+  
+  .burger-icon {
+    @include burger(30px, 3px, 5px, $white);
+  }
+  
+  .menu-button.is-active .burger-icon {
+    @include burger-to-cross;
+  }
+  
+  // Hamburger Over Rides
+  .menu-button {
+    display: inline-block;
+    padding: .5em;
+  
+  }
+  
+  .burger-icon {
+  
+    @include burger(30px, 3px, 5px, $white);
+    display: inline-flex !important;
+  }
+  
+  .menu-button.is-active .burger-icon {
+    @include burger-to-cross;
+  }
+  a.mobile-logo img {
+    width: 145px;
+}
+  .top-bar-right.float-right.hide-for-tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@include breakpoint (large down){
+    .position-right {
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow-y: auto;
+        width: 80vw;
+    }
+    .off-canvas-content .off-canvas.position-right, .position-right {
+        transform: translateX(80vw);
+    }
+    .off-canvas {
+        @include hecs-dark-gradient;
+        .accordion-menu li > a {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    }
+    .off-canvas-content.is-open-right.has-transition-push {
+        transform: translateX(-80vw);
+    }
+
+    ul#offcanvas-nav {
+        margin-left: 3rem;
+        margin-top: 3rem;
+        li {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+        ul#e5ksy8-acc-menu {
+            margin-left: 2rem;
+            .is-accordian-submenu > li.is-accordion-submenu-item > a {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+        
+        ul#e5ksy8-acc-menu > li > a {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, .7);
+            font-weight: 500;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+    }
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a:after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 14px inset;
+    content: "";
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: #e1e100 transparent transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: -27px;
+    }
+}
