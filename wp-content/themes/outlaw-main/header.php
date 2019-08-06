@@ -42,9 +42,49 @@
 			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
 			
 			<div class="off-canvas-content" data-off-canvas-content>
-			<!-- <div class="pattern-hero">
-				<div class="the-pattern"></div>
-			</div>	 -->
+			<div class="top-header show-for-tablet">
+				<div class="quick-items">
+					<div class="grid-container">
+						<div class="grid-x align-middle">
+							<div class="cell tablet-6">
+								<ul id="quick-Contact">
+									<li>
+										<a href="mailto:info@outlawdirtymoney.com">Email Us</a>
+									</li>
+									<li>
+									<a href="tel:602-633-5146">602-633-5146</a>
+									</li>
+								</ul>
+							</div>
+							<div class="cell tablet-6">
+							<ul id="social" class="mobile-social">
+								<li class="toolkit"><a href="/take-action/toolkit/">Volunteer Toolkit</a></li>
+										<li class="social-icon">
+											<a href="#" class="icon-twitter">
+											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Twitter</span>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a href="#" class="icon-linkedin">
+											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money LinkedIn</span>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a href="#" class="icon-google">
+											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Google</span>
+											</a>
+										</li>
+										<li class="social-icon">
+											<a href="#" class="icon-facebook">
+											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Facebook</span>
+											</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
 				<header class="header" role="banner">
 							
 					 <!-- This navs will be applied to the topbar, above all content 

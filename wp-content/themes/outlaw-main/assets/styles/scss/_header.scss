@@ -20,6 +20,63 @@
     }
 }
 
+.top-header{
+    background: $odm-blue;
+    ul {
+        display: inline-flex;
+        margin: 0;
+        li{
+            list-style-type: none;
+            font-size: 14px;
+            display: inline-flex;   
+        }
+    }
+    ul#social {
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        text-align: right;
+        max-height: 18px;
+        display: inline-flex;
+        justify-content: flex-end;
+        li.social-icon {
+            display: inline-flex;
+            a{
+                padding: 0;
+                margin: 0;
+            }
+            a.icon-twitter{
+                background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160159/Twitter.svg');
+                width: 24px;
+                height: 24px;
+                background-position: center;
+                background-size: contain;
+            }
+            a.icon-linkedin{
+                background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160224/Linkedin.svg');
+                width: 24px;
+                height: 24px;
+                background-position: center;
+                background-size: contain;
+            }
+            a.icon-google{
+                background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160234/Google.svg');
+                width: 24px;
+                height: 24px;
+                background-position: center;
+                background-size: contain;
+            }
+            a.icon-facebook{
+                background: url('https://s3.amazonaws.com/hecs-media/wp-content/uploads/2019/07/23160559/Facebook.svg');
+                width: 24px;
+                height: 24px;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+    
+    }
+}
 
 
 
