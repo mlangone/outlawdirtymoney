@@ -47,39 +47,40 @@
 					<div class="grid-container">
 						<div class="grid-x align-middle">
 							<div class="cell tablet-6">
-								<ul id="quick-Contact">
-									<li>
-										<a href="mailto:info@outlawdirtymoney.com">Email Us</a>
+								<ul id="social" class="mobile-social">
+									<li class="toolkit"><a href="/take-action/toolkit/">Volunteer Toolkit</a></li>
+									<li class="social-icon">
+										<a href="#" class="icon-twitter">
+										<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Twitter</span>
+										</a>
 									</li>
-									<li>
-									<a href="tel:602-633-5146">602-633-5146</a>
+									<li class="social-icon">
+										<a href="#" class="icon-linkedin">
+										<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money LinkedIn</span>
+										</a>
+									</li>
+									<li class="social-icon">
+										<a href="#" class="icon-google">
+										<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Google</span>
+										</a>
+									</li>
+									<li class="social-icon">
+										<a href="#" class="icon-facebook">
+										<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Facebook</span>
+										</a>
 									</li>
 								</ul>
 							</div>
 							<div class="cell tablet-6">
-							<ul id="social" class="mobile-social">
-								<li class="toolkit"><a href="/take-action/toolkit/">Volunteer Toolkit</a></li>
-										<li class="social-icon">
-											<a href="#" class="icon-twitter">
-											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Twitter</span>
-											</a>
-										</li>
-										<li class="social-icon">
-											<a href="#" class="icon-linkedin">
-											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money LinkedIn</span>
-											</a>
-										</li>
-										<li class="social-icon">
-											<a href="#" class="icon-google">
-											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Google</span>
-											</a>
-										</li>
-										<li class="social-icon">
-											<a href="#" class="icon-facebook">
-											<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Facebook</span>
-											</a>
-										</li>
-									</ul>
+							<div class="flex-cta">
+								<div class="top-volunteer">
+									<a type="button" class="button red small" href="">Volunteer</a>
+								</div>
+								<div class="top-donate">
+									<a type="button" class="button blue small" href="">Donate</a>
+								</div>
+							</div>
+							
 							</div>
 						</div>
 					</div>
