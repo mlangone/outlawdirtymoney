@@ -35,10 +35,10 @@
         margin: 0;
         width: 100%;
         align-items: center;
-        text-align: right;
+        text-align: left;
         max-height: 18px;
         display: inline-flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         li.social-icon {
             display: inline-flex;
             a{
@@ -298,4 +298,24 @@ body.blog{
     margin-top: -3px;
     left: -27px;
     }
+}
+
+.flex-cta {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    div:nth-child(1) {
+        margin-right: 0.5rem;
+    }
+}
+
+
+.dropdown.menu>li>a {
+    color: $white;
+    }
+.is-dropdown-submenu>li a{
+    color: $white;
+}
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:after {
+    border-color: $white transparent transparent;
 }

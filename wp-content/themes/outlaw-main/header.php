@@ -48,7 +48,6 @@
 						<div class="grid-x align-middle">
 							<div class="cell tablet-6">
 								<ul id="social" class="mobile-social">
-									<li class="toolkit"><a href="/take-action/toolkit/">Volunteer Toolkit</a></li>
 									<li class="social-icon">
 										<a href="#" class="icon-twitter">
 										<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Twitter</span>
