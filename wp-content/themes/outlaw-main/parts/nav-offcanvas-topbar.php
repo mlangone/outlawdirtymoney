@@ -10,7 +10,7 @@
 		<div class="cell tablet-12 align-center text-center">
 			<div class="cell location-logo">
 				<a class="main-logo" href="<?php echo home_url(); ?>">
-					<img class="main-logo-clear" src="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/07/29221226/ODM-logo-white-1.png" alt="outlaw dirty money logo" srcset="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/07/29221226/ODM-logo-white-1.png 2x"/>
+					<img class="main-logo-clear" src="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/09/06171725/ODM-logo-white-1.png" alt="outlaw dirty money logo" srcset="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/09/06171725/ODM-logo-white-1.png 2x"/>
 				</a>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 				</div>
 				<div class="top-bar-right float-right hide-for-tablet">
 					<a class="mobile-logo" style="max-width:145px" href="<?php echo home_url(); ?>">
-						<img src="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/07/29221152/ODM-Logo-for-black-bkgrnd.png" alt="mobile outlaw dirty money logo" srcset="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/07/29221152/ODM-Logo-for-black-bkgrnd.png 2x"/>
+						<img src="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/09/06172049/ODM-Logo-for-black-bkgrnd.png" alt="mobile outlaw dirty money logo" srcset="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/09/06172049/ODM-Logo-for-black-bkgrnd.png 2x"/>
 					</a>
 					<nav class="menu align-right" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
 					<a data-toggle="off-canvas" class="menu-button" id="menuButton"><?php ( 'jointswp' ); ?>
