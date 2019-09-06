@@ -16,6 +16,8 @@
 						</a>
 					</div>
 				</div>
+			</div>
+		</div>
 				<div class="top-bar-right show-for-tablet">
 					<nav class="menu" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
 						<?php joints_top_nav(); ?>

@@ -73,7 +73,7 @@
 							<div class="cell tablet-6">
 							<div class="flex-cta">
 								<div class="top-volunteer">
-									<a type="button" class="button red small" href="">Volunteer</a>
+									<a type="button" class="button red small" href="">Take Action</a>
 								</div>
 								<div class="top-donate">
 									<a type="button" class="button blue small" href="">Donate</a>
