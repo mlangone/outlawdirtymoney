@@ -319,3 +319,16 @@ body.blog{
 .dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:after {
     border-color: $white transparent transparent;
 }
+
+li.spanish{
+    color: white;
+    font-size: 1rem !important;
+    font-weight: 700;
+    margin-right: .5rem;
+    text-decoration: underline;
+}
+@include breakpoint (tablet){
+    .cell.location-logo {
+        margin-top: 2em;
+    }
+}
