@@ -80,10 +80,10 @@
 							<div class="cell tablet-6">
 							<div class="flex-cta">
 								<div class="top-volunteer">
-									<a type="button" class="button red small" href="">Get Involved</a>
+									<a type="button" class="button red small" href="/get-involved/">Take Action</a>
 								</div>
 								<div class="top-donate">
-									<a type="button" class="button blue small" href="">Donate</a>
+									<a type="button" class="button blue small" href="https://secure.actblue.com/donate/outlawdirtymoneyaz?refcode=website" target="_blank">Donate</a>
 								</div>
 							</div>
 							
