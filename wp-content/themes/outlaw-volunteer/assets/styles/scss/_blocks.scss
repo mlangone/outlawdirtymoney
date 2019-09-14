@@ -1,0 +1,140 @@
+/************************************************
+
+Stylesheet: Blocks Frontend and Backend Stylesheet
+
+*************************************************/
+h1, h2, h3, h4, h5, h6 {
+ // text-transform: capitalize;
+}
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Apply 100% Width to Necessary Elements
+2.0 Apply Wide, Full and Default Align Styles
+3.0 Media Queries
+--------------------------------------------------------------*/
+$global-width: rem-calc(1224);
+
+/*--------------------------------------------------------------
+1.0 Apply 100% Width to Necessary Elements
+--------------------------------------------------------------*/
+
+.gutenberg-compatible-template .entry-content > *,
+[id^="kt-layout-id_"] > .kt-row-column-wrap {
+  max-width: 100%;
+  width: 100%;
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*--------------------------------------------------------------
+2.0 Apply Wide, Full and Default Align Styles
+--------------------------------------------------------------*/
+
+.gutenberg-compatible-template .entry-content > *:not( .alignwide ):not( .alignfull ):not( .alignnone ),
+.gutenberg-compatible-template .entry-header,
+.gutenberg-compatible-template .page-header,
+.gutenberg-compatible-template .post-thumbnail,
+.gutenberg-compatible-template #comments  {
+  width: 769px;
+  max-width: 769px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gutenberg-compatible-template .alignnone {
+  width: auto;
+  max-width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint(tablet){
+    @include breakpoint(large down){
+      max-width: 1024px;
+    }
+  }
+}
+.gutenberg-compatible-template .alignwide {
+  width: auto;
+  max-width: 1424px;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint(tablet){
+    @include breakpoint(large down){
+      max-width: 1024px;
+    }
+  }
+}
+
+.gutenberg-compatible-template .alignfull {
+  width: 100%;
+  max-width: 100%;
+}
+
+.gutenberg-compatible-template {
+  .kt-row-layout-inner {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+
+.gutenberg-compatible-template .post-thumbnail img,
+.gutenberg-compatible-template .alignwide img,
+.gutenberg-compatible-template .alignfull img {
+  max-width: 100%;
+}
+
+
+body.gutenberg-compatible-templatee.kt-editor-width-default .editor-post-title__block,
+		body.gutenberg-compatible-templatee.kt-editor-width-default .editor-default-block-appender,
+		body.gutenberg-compatible-templatee.kt-editor-width-default .editor-block-list__block,
+		body.block-editor-page.kt-editor-width-default .wp-block {
+			max-width: 769px;
+		}body.gutenberg-compatible-templatee.kt-editor-width-sidebar .editor-post-title__block,
+		body.gutenberg-compatible-templatee.kt-editor-width-sidebar .editor-default-block-appender,
+		body.gutenberg-compatible-templatee.kt-editor-width-sidebar .editor-block-list__block,
+		body.block-editor-page.kt-editor-width-sidebar .wp-block {
+			max-width: 769px;
+		}body.gutenberg-compatible-templatee.kt-editor-width-nosidebar .editor-post-title__block,
+		body.gutenberg-compatible-templatee.kt-editor-width-nosidebar .editor-default-block-appender,
+		body.gutenberg-compatible-templatee.kt-editor-width-nosidebar .editor-block-list__block,
+		body.block-editor-page.kt-editor-width-nosidebar .wp-block {
+			max-width: 1224px;
+		}body.gutenberg-compatible-templatee.kt-editor-width-fullwidth .editor-post-title__block,
+		body.gutenberg-compatible-templatee.kt-editor-width-fullwidth .editor-default-block-appender,
+		body.gutenberg-compatible-templatee.kt-editor-width-fullwidth .editor-block-list__block,
+		body.block-editor-page.kt-editor-width-fullwidth .wp-block {
+			max-width: none;
+		}body.gutenberg-compatible-templatee .editor-block-list__layout .editor-block-list__block[data-align=wide],
+		body.block-editor-page .editor-block-list__layout .wp-block[data-align=wide] {
+			width: auto;
+			max-width: 1310px;
+		}body.gutenberg-compatible-templatee .editor-block-list__layout .editor-block-list__block[data-align=full],
+		body.block-editor-page .editor-block-list__layout .wp-block[data-align=full] {
+			max-width: none;
+		}
+
+
+/*--------------------------------------------------------------
+3.0 Media Queries
+--------------------------------------------------------------*/
+@include breakpoint(large down){
+  .gutenberg-compatible-template .entry-content > *:not( .alignwide ):not( .alignfull ),
+  [id^="kt-layout-id_"] > .kt-row-column-wrap,
+  .gutenberg-compatible-template .entry-header,
+  .gutenberg-compatible-template .page-header,
+  .gutenberg-compatible-template .post-thumbnail,
+  .gutenberg-compatible-template #comments  {
+    max-width: calc(100%);
+    width: calc(100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gutenberg-compatible-template .alignwide,
+  .gutenberg-compatible-template .alignfull {
+    max-width: calc(100%);
+    width: calc(100% );
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

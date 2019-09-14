@@ -1,0 +1,143 @@
+.hecs-gradient{
+    width: 100%;
+    height: auto;
+    @include hecs-gradient;
+}
+
+.bottom-cta{
+    @include hecs-gradient;
+    .set-cta-height{
+        height: auto;
+        padding: 2rem 0px;
+        @include breakpoint(tablet) {
+            height: 660px;
+            padding: 0;
+        }
+        .cta-image{
+            max-width: 384px;
+            @include breakpoint(tablet down){
+                margin-left: auto; margin-right: auto;
+            }
+        }
+    }
+}
+
+.has-very-brand-white-color{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+figure.wp-block-image.shirtImage {
+    top: 13%;
+    position: relative;
+}
+div#owl-homeTestimonials {
+    &.owl-theme .owl-nav {
+        position: relative;
+        @include breakpoint (tablet up){
+        top: -150px;
+        left: 21vw;
+        }
+    }
+    &.owl-theme .owl-nav [class*=owl-]{
+        background: transparent;
+    }
+    .testimonialSlides {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include breakpoint(tablet){
+            min-height: 680px;
+        }
+    }
+}
+.thebackground {
+    &:after{
+        content: ''; 
+        display: block;
+        top:0;
+        position: absolute;                        
+        width:100%;
+        height:100%;
+        background:linear-gradient(104deg, #ffffff 55%, transparent 45%);
+    }
+    @include breakpoint (tablet up){
+        min-height: 680px;
+        &:after{
+            content: ''; 
+            display: block;
+            top:0;
+            position: absolute;                        
+            width:100%;
+            height:100%;
+            background:linear-gradient(104deg, #ffffff 69%, transparent 35%);
+        }
+    }
+
+
+}
+.kt-image-overlay-wrap.kt-over-image-zoomin {
+    overflow: hidden;
+    border-radius: 8px;
+    background: transparent;
+}
+.pins_animation.ihotspot_pulse {
+    -moz-animation: Ani 6s infinite;
+    -webkit-animation: Ani 6s infinite;
+    animation: Ani 6s infinite;
+}
+
+.pins_animation {
+    border: 3px solid rgba(225, 225, 2, 0.49);
+    box-shadow: 0 0 20px rgba(225, 225, 1, 0.52);
+}
+@keyframes Ani {
+    0% {
+        box-shadow: 0 0 0 rgba(255,255,255,0);
+        border: 1px solid rgba(255,255,255,0);
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    70% {
+        box-shadow: 0 0 50px #e1e102;
+        border: 1px solid #e1e102;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        box-shadow: 0 0 60px rgba(255,255,255,0);
+        border: 0 solid rgba(255,255,255,0);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5)
+    }
+}
+
+.logo-drop {
+    box-shadow: 2px 2px 21px rgba(0, 0, 0, 0.33);
+    margin-bottom: 1rem;
+    z-index: 50;
+}
+.angle-slides {
+    z-index: 49;
+}
+p.name {
+    color: $black;
+}
+.wp-block-image.testimonial-gravatar {
+    margin-bottom: 0;
+}
+figure.wp-block-image.testimonial-gravatar {
+    margin-bottom: 0;
+        img{
+            max-width: 66%;
+        }
+    
+}
+
+div#html-1 h3 {
+    font-size: 1.333rem;
+}
+/*=============================================
+=            Responsive only            =
+=============================================*/

@@ -1,0 +1,61 @@
+/******************************************************************
+
+Stylesheet: Login Stylesheet
+
+This stylesheet is loaded is only on the login page. This way you can style
+the login page. It won't affect any other page, admin or front-end.
+
+Make sure functions/login.php is activated in your functions.php file.
+
+This stylesheet is turned off by default.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+html{
+
+}
+body.login {
+#backtoblog a, #nav a {
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+background-image: linear-gradient(199deg, #0071CE 0%, #082031 76%);
+mix-blend-mode: normal;
+width: 100%;
+height: 100%;
+background-size: contain;
+}
+
+
+
+#login {
+	opacity: 1;
+}
+
+// Change the login logo
+.login h1 a {
+	// background: url('https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/07/29221226/ODM-logo-white-1.png') no-repeat top center;
+	width: 326px;
+	height: 67px;
+	text-indent: -9999px;
+	overflow: hidden;
+	padding-bottom: 15px;
+	display: block;
+	z-index: 99999;
+}
+form {
+
+}
+
+body form .input {
+
+}
+
+// Login Button Style
+#wp-submit {
+	
+}

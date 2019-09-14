@@ -1,0 +1,287 @@
+/************************************************
+
+Stylesheet: Mixins Stylesheet
+
+*************************************************/
+// Rokkitt 
+// font-family: 'Rokkitt', serif;
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// @import url('//fonts.googleapis.com/css?family=Nunito+Sans:600,800|Rokkitt:700,900&display=swap');
+@import url('//fonts.googleapis.com/css?family=Nunito+Sans:600,800|Montserrat:800,900&display=swap');
+
+$base-box-shadow:  0px 4px 30px rgba(0, 0, 0, 0.15) !default;
+$base-border-radius:6px;
+$full-box-shadow: 0 0 40px 0 rgba(0,0,0,.16) !default;
+
+// h4,h5,h6{
+//   font-family: $body-font-family;
+//   font-weight: 500;
+// }
+
+
+
+// Box borders
+@mixin boxborder {
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+}
+
+@mixin buttonshadow{
+  box-shadow: $base-box-shadow;
+}
+
+// White box
+@mixin whitebox {
+  border-radius: $base-border-radius;
+  box-shadow: $full-box-shadow;
+  background-color: $white;
+}
+
+@mixin hecs-gradient($from: #cccc00, $to: #ffff00) {
+	background: $from; /* Old browsers */
+  background: #cccc00;
+  background: -moz-linear-gradient(top, #cccc00 0%, #ffff00 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #cccc00), color-stop(100%, #ffff00));
+  background: -webkit-linear-gradient(top, #cccc00 0%, #ffff00 100%);
+  background: -o-linear-gradient(top, #cccc00 0%, #ffff00 100%);
+  background: -ms-linear-gradient(top, #cccc00 0%, #ffff00 100%);
+  background: linear-gradient(to bottom, #cccc00 0%, #ffff00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccc00', endColorstr='#ffff00', GradientType=0 );
+}
+
+@mixin hecs-dark-gradient($from: #323e48, $to: #000000) {
+	background: $from; /* Old browsers */
+  background: #323e48;
+  background: -moz-linear-gradient(top, #323e48 0%, #000000 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #323e48), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #323e48 0%, #000000 100%);
+  background: -o-linear-gradient(top, #323e48 0%, #000000 100%);
+  background: -ms-linear-gradient(top, #323e48 0%, #000000 100%);
+  background: linear-gradient(to bottom, #323e48 0%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323e48', endColorstr='#000000', GradientType=0 );
+}
+
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+// how to use must have the @include
+// span.button-edit-pencil {
+//  @include background-2x('../images/edit-pencil', 'png', 16px, 16px, left, no-repeat);
+//}
+@mixin background-2x($path, $ext: "png", $w: auto, $h: auto, $pos: left top, $repeat: no-repeat) {
+
+    $at1x_path: "#{$path}.#{$ext}";
+    $at2x_path: "#{$path}@2x.#{$ext}";
+  
+    background-image: url("#{$at1x_path}");
+    background-size: $w $h;
+    background-position: $pos;
+    background-repeat: $repeat;
+  
+    @media all and (-webkit-min-device-pixel-ratio : 1.5),
+    all and (-o-min-device-pixel-ratio: 3/2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+      background-image: url("#{$at2x_path}");
+    }
+  }
+
+// Burger parts
+//
+// (---) top    -> &::before
+// [---] middle -> &
+// (---) bottom -> &::after
+
+
+// Vendor prefixes
+$sass-burger-add-vendor-prefixes: true !default;
+
+// Burger
+@mixin burger($width: 30px, $height: 5px, $gutter: 3px, $color: #000, $border-radius: 0, $transition-duration: .3s) {
+  $burger-height: $height !global;
+  $burger-gutter: $gutter !global;
+
+  position: relative;
+  margin-top: $height + $gutter;
+  margin-bottom: $height + $gutter;
+
+  @if $sass-burger-add-vendor-prefixes {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  user-select: none;
+
+  // 1. Fixes jagged edges in Firefox, see issue #10.
+  &, &::before, &::after {
+    display: block;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    outline: 1px solid transparent; // 1
+    @if $border-radius != 0 {
+      border-radius: $border-radius;
+    }
+
+    @if $sass-burger-add-vendor-prefixes {
+      -webkit-transition-property: background-color, -webkit-transform;
+      -moz-transition-property: background-color, -moz-transform;
+      -o-transition-property: background-color, -o-transform;
+    }
+    transition-property: background-color, transform;
+
+    @if $sass-burger-add-vendor-prefixes {
+      -webkit-transition-duration: $transition-duration;
+      -moz-transition-duration: $transition-duration;
+      -o-transition-duration: $transition-duration;
+    }
+    transition-duration: $transition-duration;
+  }
+
+  &::before, &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    top: -($height + $gutter);
+  }
+
+  &::after {
+    top: $height + $gutter;
+  }
+}
+
+
+// Select parts of the burger
+@mixin burger-parts {
+  &, &::before, &::after {
+    @content;
+  }
+}
+
+@mixin burger-top {
+  &::before {
+    @content;
+  }
+}
+
+@mixin burger-middle {
+  & {
+    @content;
+  }
+}
+
+@mixin burger-bottom {
+  &::after {
+    @content;
+  }
+}
+
+
+// Burger animations
+@mixin burger-to-cross($color: auto) {
+  & {
+    background-color: transparent;
+  }
+  @if ($color != auto) {
+    &::before, &::after {
+      background-color: $color;
+    }
+  }
+  &::before {
+    @if $sass-burger-add-vendor-prefixes {
+      -webkit-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+      -moz-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+      -ms-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+      -o-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+    }
+    transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+  }
+  &::after {
+    @if $sass-burger-add-vendor-prefixes {
+      -webkit-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+      -moz-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+      -ms-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+      -o-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+    }
+    transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes slideDown {
+  0% {
+    -moz-transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes slideDown {
+  0% {
+    -o-transform: translateY(-100%);
+  }
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animated.slideDown {
+  -webkit-animation-name: slideDown;
+  -moz-animation-name: slideDown;
+  -o-animation-name: slideDown;
+  animation-name: slideDown;
+}
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes slideUp {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-100%);
+  }
+}
+@-o-keyframes slideUp {
+  0% {
+    -o-transform: translateY(0);
+  }
+  100% {
+    -o-transform: translateY(-100%);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.animated.slideUp {
+  -webkit-animation-name: slideUp;
+  -moz-animation-name: slideUp;
+  -o-animation-name: slideUp;
+  animation-name: slideUp;
+}

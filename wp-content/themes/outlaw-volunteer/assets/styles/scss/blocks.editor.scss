@@ -1,0 +1,32 @@
+/************************************************
+
+Stylesheet: Blocks Backend Stylesheet
+
+*************************************************/
+// .block-editor{
+//     .bar-cta{ 
+//         background: red;
+//         height: 108px;
+//     }
+// }
+// $content__width: 768px;
+// $content__width--wide: 1024px;
+// .wp-block {
+// 	max-width: $content__width;
+  
+// 	&[data-align="wide"] {
+// 		max-width: $content__width--wide;
+// 	}
+
+// 	&[data-align="full"] {
+// 		max-width: none;
+// 	}
+// }
+body.gutenberg-editor-page .editor-block-list__layout .editor-block-list__block[data-align=center],
+body.block-editor-page .editor-block-list__layout .wp-block[data-align=center] {
+	width: auto;
+	max-width: 769px;
+}
+body .dark-admin {
+    background: #252525;
+}
