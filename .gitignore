@@ -179,3 +179,4 @@ node_modules/
 
 # Child Themes
 !wp-content/themes/outlaw-main/
+!wp-content/themes/outlaw-child/
