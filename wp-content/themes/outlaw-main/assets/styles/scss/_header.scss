@@ -305,8 +305,9 @@ body.blog{
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    div:nth-child(1) {
-        margin-right: 0.5rem;
+    div:nth-child(even) {
+        margin-right: .5rem;
+        margin-left: .5rem;
     }
 }
 
@@ -327,6 +328,9 @@ li.spanish{
     font-weight: 700;
     margin-right: .5rem;
     text-decoration: underline;
+}
+a#menuButton span.menu-text {
+    color: white;
 }
 @include breakpoint (tablet){
     .cell.location-logo {
