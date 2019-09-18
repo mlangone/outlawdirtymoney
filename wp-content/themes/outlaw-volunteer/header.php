@@ -79,6 +79,9 @@
 							</div>
 							<div class="cell tablet-6">
 							<div class="flex-cta">
+								<div class="top-sign">
+									<a type="button" class="button red small" href="/where-to-sign/">Sign the Petition</a>
+								</div>
 								<div class="top-volunteer">
 									<a type="button" class="button red small" href="/get-involved/">Take Action</a>
 								</div>

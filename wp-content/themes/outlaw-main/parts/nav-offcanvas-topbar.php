@@ -7,7 +7,7 @@
 ?>
 <div id="mainTopBar" class="grid-container">
 	<div class="grid-x align-center-middle set-height">
-		<div class="cell tablet-12 align-center text-center">
+		<div class="cell tablet-12 align-center text-center show-for-tablet">
 			<div class="cell location-logo">
 				<a class="main-logo" href="<?php echo home_url(); ?>">
 					<img class="main-logo-clear" src="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/09/06171725/ODM-logo-white-1.png" alt="outlaw dirty money logo" srcset="https://s3.amazonaws.com/outlawdirtymoney/wp-content/uploads/2019/09/06171725/ODM-logo-white-1.png 2x"/>
