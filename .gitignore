@@ -178,5 +178,6 @@ node_modules/
 #!wp-content/mu-plugins/example-mu-plugin/
 
 # Child Themes
+!.circleci/
 !wp-content/themes/outlaw-main/
 !wp-content/themes/outlaw-volunteer/

@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/development
+    machine:
+      image: circleci/classic:latest
+  
+    steps:
+    - checkout:
+        path: ~/development
+    - run: 
+        name: copy to server
+        command: 
+            rsync -e "ssh -o StrictHostKeyChecking=no" -avz --exclude=.git/ --exclude=.circleci/ --exclude=.gitignore ~/development/ mlangone@web563.webfaction.com:/home/mlangone/webapps/staging_expose_wp/ 
+            #scp -r ~/development ec2-user@3.220.2.19:/var/www/html/
+
+
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build:
+        filters:
+          branches:
+            only:
+            - master
