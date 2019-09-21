@@ -58,9 +58,6 @@
 
 						<div class="grid-x grid-margin-x grid-padding-x align-middle subfooter-height">
 							<div class="cell small-12 text-center align-center hide-for-tablet">
-								<nav class="menu company-Links-mobile" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
-										<?php joints_company_links(); ?>
-								</nav>
 								<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved</p>
 							</div>
 							<div class="cell auto align-center text-center hide-for-tablet">
@@ -69,11 +66,6 @@
 								</a>
 							</div>
 							<div class="small-12 tablet-9 cell show-for-tablet">
-								<nav class="menu company-Links" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
-								<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved</p>
-									<?php joints_company_links(); ?>
-								</nav>
-
 							</div>
 							<div class="small-12 tablet-3 cell show-for-tablet">
 								<nav class="menu" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
