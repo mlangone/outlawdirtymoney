@@ -5,7 +5,7 @@ register_nav_menus(
 		'main-nav'		=> __( 'The Main Menu', 'jointswp' ),		// Main nav in header
 		'offcanvas-nav'	=> __( 'The Off-Canvas Menu', 'jointswp' ),	// Off-Canvas nav
 		'footer-links'	=> __( 'Footer Links', 'jointswp' ),			// Secondary nav in footer
-		'company-links'	=> __( 'Company Links', 'jointswp' ),			// Secondary nav in footer
+		'language-links'	=> __( 'Language Links', 'jointswp' ),			// Secondary nav in footer
 		'mobile-footer-links'	=> __( 'Mobile Footer Links', 'jointswp' )			// Secondary nav in footer
 	)
 );
@@ -65,12 +65,12 @@ function joints_footer_links() {
 	));
 } /* End Footer Menu */
 // The Footer Menu
-function joints_company_links() {
+function joints_language_links() {
 	wp_nav_menu(array(
 		'container'			=> 'false',				// Remove nav container
-		'menu_id'			=> 'company-links',		// Adding custom nav id
+		'menu_id'			=> 'language-links',		// Adding custom nav id
 		'menu_class'		=> 'menu',				// Adding custom nav class
-		'theme_location'	=> 'company-links',		// Where it's located in the theme
+		'theme_location'	=> 'language-links',		// Where it's located in the theme
 		'depth'				=> 0,					// Limit the depth of the nav
 		'fallback_cb'		=> ''					// Fallback function
 	));
@@ -106,7 +106,7 @@ function joints_main_nav_fallback() {
 function joints_footer_links_fallback() {
 	/* You can put a default here if you like */
 }
-function joints_company_links_fallback() {
+function joints_language_links_fallback() {
 	/* You can put a default here if you like */
 }
 function joints_mobile_footer_links_fallback() {
