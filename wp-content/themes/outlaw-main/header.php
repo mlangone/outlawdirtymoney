@@ -83,7 +83,7 @@
 									<a type="button" class="button red small" href="/where-to-sign/">Sign the Petition</a>
 								</div>
 								<div class="top-volunteer">
-									<a type="button" class="button red small" href="/get-involved/">Take Action</a>
+									<a type="button" class="button red small" href="/volunteer/">Volunteer</a>
 								</div>
 								<div class="top-donate">
 									<a type="button" class="button blue small" href="https://secure.actblue.com/donate/outlawdirtymoneyaz?refcode=website" target="_blank">Donate</a>
