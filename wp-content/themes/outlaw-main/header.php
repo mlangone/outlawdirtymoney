@@ -47,10 +47,10 @@
 					<div class="grid-container">
 						<div class="grid-x align-middle">
 							<div class="cell tablet-6">
-							<nav class="menu mobile-footer" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
-								<?php joints_language_links(); ?>
-							</nav>
 								<ul id="social" class="mobile-social">
+									<nav class="menu mobile-footer" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
+										<?php joints_language_links(); ?>
+									</nav>
 									<li class="social-icon">
 										<a href="#" class="icon-twitter">
 										<span aria-hidden="true" class="show-for-sr">Outlaw Dirty Money Twitter</span>

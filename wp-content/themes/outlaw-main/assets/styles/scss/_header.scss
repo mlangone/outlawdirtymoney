@@ -337,3 +337,24 @@ a#menuButton span.menu-text {
         margin-top: 2em;
     }
 }
+ul#language-links {
+    padding: 0;
+    margin: 0;
+    li#menu-item-wpml-ls-11-es {
+        padding: 0;
+        margin: 0;
+        a{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+
+span.wpml-ls-native {
+    color: white;
+    font-size: 1rem !important;
+    font-weight: 700;
+    margin-right: .5rem;
+    text-decoration: underline;
+}
