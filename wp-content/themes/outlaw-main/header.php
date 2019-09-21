@@ -47,9 +47,7 @@
 					<div class="grid-container">
 						<div class="grid-x align-middle">
 							<div class="cell tablet-6">
-							<nav class="menu company-Links-mobile" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
 										<?php joints_language_links(); ?>
-								</nav>
 								<ul id="social" class="mobile-social">
 									<li class="social-icon">
 										<a href="#" class="icon-twitter">
