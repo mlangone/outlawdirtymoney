@@ -66,6 +66,7 @@
 								</a>
 							</div>
 							<div class="small-12 tablet-9 cell show-for-tablet">
+							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved</p>
 							</div>
 							<div class="small-12 tablet-3 cell show-for-tablet">
 								<nav class="menu" role="navigation" aria-label="<?php _e( 'Menu', 'jointswp' ); ?>">
