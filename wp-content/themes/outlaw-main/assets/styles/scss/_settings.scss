@@ -63,6 +63,9 @@
 // @import "fonts";
 @import '../../../node_modules/foundation-sites/scss/util/util';
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,900&display=swap');
+
+
 // 1. Global
 // ---------
 
@@ -91,7 +94,7 @@ $gray: #EFEFEF;
 $body-color: #ffffff;
 $body-background: $body-color;
 $body-font-color: $black;
-$body-font-family: 'Nunito Sans', sans-serif;
+$body-font-family: 'Work Sans', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -142,7 +145,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Montserrat', sans-serif;
+$header-font-family: 'Work Sans', sans-serif;
 $header-font-weight: 900;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
