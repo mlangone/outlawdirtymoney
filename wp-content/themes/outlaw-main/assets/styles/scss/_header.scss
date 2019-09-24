@@ -336,8 +336,8 @@ a#menuButton span.menu-text {
 }
 @include breakpoint (tablet){
     .cell.location-logo {
-        margin-top: 1.5em;
-        margin-bottom: 1em;
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
     }
 }
 ul#language-links {
