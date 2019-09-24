@@ -160,7 +160,7 @@ wp-content/uploads
 wp-content/uploads/*
 wp-content/index.php
 wp-content/cache/*
-
+wp-content/wphb-cache/*
 # ignore specific themes
 wp-content/themes/twenty*/
 
