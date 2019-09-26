@@ -153,6 +153,17 @@ p {
 		margin-bottom: 0;
 	}
 }
+
+.menu-item.social {
+	margin-top: -0.175em;
+	margin-right: 0 !important;
+	font-size: 1.35em;
+
+	.elementor-item {
+		color: $odm-red;
+	}
+}
+
 .elementor-text-editor {
 	& > * {
 		line-height: inherit;
