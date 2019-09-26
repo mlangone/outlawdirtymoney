@@ -1,11 +1,10 @@
 /*
-These functions make sure WordPress
-and Foundation play nice together.
+These functions make sure WordPress and Foundation play nice together.
 */
 jQuery(document).ready(function() {
 	var	$ =	jQuery;
 	
-	
+
 	// Remove empty P tags created by WP inside of Accordion and Orbit
 	$('.accordion p:empty, .orbit p:empty').remove();
 
