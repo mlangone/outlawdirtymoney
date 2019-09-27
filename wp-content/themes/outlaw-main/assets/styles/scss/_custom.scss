@@ -168,26 +168,25 @@ p {
 
 .block-button,
 .forminator-custom-form .forminator-button {
-	min-width: 19.444rem;
-	padding: 0.35em 0.7em;
-	color: $white;
-	font-size: 1.967rem;
-	font-weight: $header-font-weight;
-	text-align: center;
-	line-height: 1;
-	text-transform: uppercase;
-}
-.block-button {
+	min-width: 19.444rem !important;
+	padding: 0.35em 0.7em !important;
+	color: $white !important;
+	font-size: 1.967rem !important;
+	font-weight: $header-font-weight !important;
+	text-align: center !important;
+	line-height: 1 !important;
+	text-transform: uppercase !important;
+	
 	&:not(.alt) {
-		background-color: $odm-red;
+		background-color: $odm-red !important;
 	}
 	&.alt {
-		background-color: $odm-dark-blue;
+		background-color: $odm-dark-blue !important;
 	}
 }
 .block-button.wide,
 .forminator-custom-form .forminator-button-submit {
-	width: 100%;
+	width: 100% !important;
 }
 
 .menu-item.social {
