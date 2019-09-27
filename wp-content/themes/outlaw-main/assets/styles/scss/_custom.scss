@@ -165,6 +165,9 @@ p {
 .color-secondary {
 	color: $odm-dark-blue;
 }
+.color-inverse {
+	color: $white;
+}
 
 .block-button,
 .forminator-custom-form .forminator-button {
@@ -200,9 +203,9 @@ p {
 }
 
 .elementor-text-editor {
-	& > * {
-		line-height: inherit;
-	}
+	/* & > * {
+		line-height: inherit;//?? still need?
+	} */
 }
 
 .forminator-custom-form {
@@ -218,7 +221,7 @@ p {
 	}
 	.forminator-merge-tags {
 		max-width: 33rem;
-		margin: 0 auto !important;
+		margin: 0 auto 1.5rem !important;
 	}
 	.forminator-input {
 		padding: 0.660em !important;
