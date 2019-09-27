@@ -162,6 +162,33 @@ p {
 .color-primary {
 	color: $odm-red;
 }
+.color-secondary {
+	color: $odm-dark-blue;
+}
+
+.block-button,
+.forminator-custom-form .forminator-button {
+	min-width: 19.444rem;
+	padding: 0.35em 0.7em;
+	color: $white;
+	font-size: 1.967rem;
+	font-weight: $header-font-weight;
+	text-align: center;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.block-button {
+	&:not(.alt) {
+		background-color: $odm-red;
+	}
+	&.alt {
+		background-color: $odm-dark-blue;
+	}
+}
+.block-button.wide,
+.forminator-custom-form .forminator-button-submit {
+	width: 100%;
+}
 
 .menu-item.social {
 	margin-top: -0.21em;
@@ -192,11 +219,12 @@ p {
 	}
 	.forminator-merge-tags {
 		max-width: 33rem;
-		margin: 0 auto;
+		margin: 0 auto !important;
 	}
 	.forminator-input {
-		font-size: 1.222rem;
-		font-weight: 300;
+		padding: 0.660em !important;
+		font-size: 1.222rem !important;
+		font-weight: 300 !important;
 		text-transform: uppercase;
 	}
 }
