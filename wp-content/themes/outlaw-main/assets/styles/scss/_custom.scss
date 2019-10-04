@@ -160,13 +160,22 @@ p {
 }
 
 .color-primary {
-	color: $odm-red;
+	&,
+	& * {
+		color: $odm-red;
+	}
 }
 .color-secondary {
-	color: $odm-dark-blue;
+	&,
+	& * {
+		color: $odm-dark-blue;
+	}
 }
 .color-inverse {
-	color: $white;
+	&,
+	& * {
+		color: $white;
+	}
 }
 
 .block-button,
