@@ -152,11 +152,13 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-transform: uppercase;
 }
-
 p {
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+a {
+	transition: 0.4s;
 }
 
 .color-primary {
@@ -229,13 +231,27 @@ p {
 
 		.menu-item {
 			width: 100%;
+
+			& > a {
+				&:hover,
+				&:focus {
+					color: $odm-red;
+				}
+			}
 		}
 		& > .menu-item {
-			font-weight: 700;
+			& > a {
+				padding: 0.5rem;
+				font-weight: 700;
+			}
 		}
 	}
 	.sub-menu {
 		list-style: none;
+
+		& > a {
+			padding: 0.25rem;
+		}
 	}
 }
 
