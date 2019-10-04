@@ -224,6 +224,15 @@ a {
 		line-height: $header-lineheight;
 	}
 }
+.elementor-element.hero {
+	.forminator-custom-form {
+		.forminator-merge-tags {
+			.footer {
+				display: none;
+			}
+		}
+	}
+}
 .elementor-location-footer {
 	.menu {
 		font-size: 1.556rem;
@@ -241,7 +250,7 @@ a {
 		}
 		& > .menu-item {
 			& > a {
-				padding: 0.5rem;
+				padding: 0.4rem;
 			}
 			&:not(.social) > a {
 				font-weight: 700;
@@ -253,7 +262,14 @@ a {
 
 		& > .menu-item {
 			& > a {
-				padding: 0.25rem;
+				padding: 0.2rem;
+			}
+		}
+	}
+	.forminator-custom-form {
+		.forminator-merge-tags {
+			.hero {
+				display: none;
 			}
 		}
 	}
