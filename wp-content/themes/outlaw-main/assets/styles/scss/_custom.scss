@@ -242,6 +242,8 @@ a {
 		& > .menu-item {
 			& > a {
 				padding: 0.5rem;
+			}
+			&:not(.social) > a {
 				font-weight: 700;
 			}
 		}
@@ -249,8 +251,10 @@ a {
 	.sub-menu {
 		list-style: none;
 
-		& > a {
-			padding: 0.25rem;
+		& > .menu-item {
+			& > a {
+				padding: 0.25rem;
+			}
 		}
 	}
 }
