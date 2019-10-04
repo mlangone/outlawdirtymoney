@@ -226,7 +226,17 @@ a {
 }
 .elementor-element.hero {
 	.forminator-custom-form {
+		color: $white;
+		text-align: center;
+
+		h2 {
+			font-size: 3.444rem;
+			line-height: 1.032;
+		}
 		.forminator-merge-tags {
+			max-width: 33rem;
+			margin: 0 auto !important;
+
 			.footer {
 				display: none;
 			}
@@ -276,19 +286,8 @@ a {
 }
 
 .forminator-custom-form {
-	color: $white;
-	text-align: center;
-
 	p {
 		font-size: 2.056rem;
-	}
-	h2 {
-		font-size: 3.444rem;
-		line-height: 1.032;
-	}
-	.forminator-merge-tags {
-		max-width: 33rem;
-		margin: 0 auto !important;
 	}
 	.forminator-input {
 		padding: 0.660em !important;
