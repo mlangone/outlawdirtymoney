@@ -222,6 +222,22 @@ p {
 		line-height: $header-lineheight;
 	}
 }
+.elementor-location-footer {
+	.menu {
+		font-size: 1.556rem;
+		text-transform: uppercase;
+
+		.menu-item {
+			width: 100%;
+		}
+		& > .menu-item {
+			font-weight: 700;
+		}
+	}
+	.sub-menu {
+		list-style: none;
+	}
+}
 
 .forminator-custom-form {
 	color: $white;
