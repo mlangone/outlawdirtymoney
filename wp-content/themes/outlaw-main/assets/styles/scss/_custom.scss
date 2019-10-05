@@ -180,7 +180,8 @@ a {
 	}
 }
 
-.block-button,
+.block-button:not(.elementor-widget-button),
+.block-button.elementor-widget-button .elementor-button,
 .forminator-custom-form .forminator-button {
 	// min-width: rem-calc(350) !important;
 	border-radius: 0 !important;
@@ -191,10 +192,10 @@ a {
 	line-height: 1 !important;
 	text-transform: uppercase !important;
 	@include breakpoint(medium up){
-		padding: 0.35rem 1.4rem !important;
+		padding: 0.35em 1.4em !important;
 	}
 	@include breakpoint(medium down){
-		padding: 0.35rem 0.7rem !important;
+		padding: 0.35em 0.7em !important;
 	}
 
 	&:not(.alt) {
@@ -214,7 +215,8 @@ a {
 		}
 	}
 }
-.block-button.wide,
+.block-button:not(.elementor-widget-button).wide,
+.block-button.elementor-widget-button.wide .elementor-button,
 .forminator-custom-form .forminator-button-submit {
 	width: 100% !important;
 }
@@ -276,7 +278,7 @@ a {
 		}
 		& > .menu-item {
 			& > a {
-				padding: 0.4rem;
+				padding: 0.4em;
 			}
 			&:not(.social) > a {
 				font-weight: 700;
@@ -289,7 +291,7 @@ a {
 
 		& > .menu-item {
 			& > a {
-				padding: 0.2rem;
+				padding: 0.2em;
 			}
 		}
 	}
