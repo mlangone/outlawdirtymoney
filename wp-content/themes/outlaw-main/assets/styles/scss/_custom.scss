@@ -183,6 +183,7 @@ a {
 .block-button,
 .forminator-custom-form .forminator-button {
 	// min-width: rem-calc(350) !important;
+	border-radius: 0 !important;
 	color: $white !important;
 	font-size: rem-calc(34.86) !important;
 	font-weight: $header-font-weight !important;
