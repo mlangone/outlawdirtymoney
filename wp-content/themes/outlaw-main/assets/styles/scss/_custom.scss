@@ -196,7 +196,7 @@ a {
 
 		&:hover,
 		&:focus {
-			background-color: darken($odm-red, 20%) !important;
+			background-color: darken($odm-red, 10%) !important;
 		}
 	}
 	&.alt {
@@ -204,7 +204,7 @@ a {
 
 		&:hover,
 		&:focus {
-			background-color: lighten($odm-dark-blue, 20%) !important;
+			background-color: lighten($odm-dark-blue, 10%) !important;
 		}
 	}
 }
