@@ -182,10 +182,10 @@ a {
 
 .block-button,
 .forminator-custom-form .forminator-button {
-	min-width: 19.444rem !important;
+	min-width: rem-calc(350) !important;
 	padding: 0.35em 0.7em !important;
 	color: $white !important;
-	font-size: 1.967rem !important;
+	font-size: rem-calc(34.86) !important;
 	font-weight: $header-font-weight !important;
 	text-align: center !important;
 	line-height: 1 !important;
@@ -193,9 +193,19 @@ a {
 	
 	&:not(.alt) {
 		background-color: $odm-red !important;
+
+		&:hover,
+		&:focus {
+			background-color: darken($odm-red, 20%) !important;
+		}
 	}
 	&.alt {
 		background-color: $odm-dark-blue !important;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($odm-dark-blue, 20%) !important;
+		}
 	}
 }
 .block-button.wide,
@@ -230,11 +240,11 @@ a {
 		text-align: center;
 
 		h2 {
-			font-size: 3.444rem;
+			font-size: rem-calc(62);
 			line-height: 1.032;
 		}
 		.forminator-merge-tags {
-			max-width: 33rem;
+			max-width: rem-calc(600);
 			margin: 0 auto !important;
 
 			.footer {
@@ -245,7 +255,7 @@ a {
 }
 .elementor-location-footer {
 	.menu {
-		font-size: 1.556rem;
+		font-size: rem-calc(28);
 		text-transform: uppercase;
 
 		.menu-item {
@@ -268,6 +278,7 @@ a {
 		}
 	}
 	.sub-menu {
+		margin-left: 2rem;
 		list-style: none;
 
 		& > .menu-item {
@@ -278,8 +289,13 @@ a {
 	}
 	.forminator-custom-form {
 		.forminator-merge-tags {
+			margin-bottom: 3rem;
+
 			.hero {
 				display: none;
+			}
+			.footer {
+				margin: 0;
 			}
 		}
 	}
@@ -287,11 +303,11 @@ a {
 
 .forminator-custom-form {
 	p {
-		font-size: 2.056rem;
+		font-size: rem-calc(37);
 	}
 	.forminator-input {
 		padding: 0.660em !important;
-		font-size: 1.222rem !important;
+		font-size: rem-calc(22) !important;
 		font-weight: 300 !important;
 		text-transform: uppercase;
 	}
