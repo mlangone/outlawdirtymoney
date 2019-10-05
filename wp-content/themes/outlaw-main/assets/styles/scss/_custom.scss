@@ -180,10 +180,10 @@ a {
 	}
 }
 
-.block-button:not(.elementor-widget-button),
+.block-button,
 .block-button.elementor-widget-button,
 .forminator-custom-form .forminator-button {
-	&,
+	&:not(.elementor-widget-button),
 	.elementor-button {
 		// min-width: rem-calc(350) !important;
 		border-radius: 0 !important;
@@ -201,7 +201,7 @@ a {
 		}
 
 		&:not(.alt) {
-			&,
+			&:not(.elementor-widget-button),
 			.elementor-button {
 				background-color: $odm-red !important;
 
@@ -212,7 +212,7 @@ a {
 			}
 		}
 		&.alt {
-			&,
+			&:not(.elementor-widget-button),
 			.elementor-button {
 				background-color: $odm-dark-blue !important;
 
