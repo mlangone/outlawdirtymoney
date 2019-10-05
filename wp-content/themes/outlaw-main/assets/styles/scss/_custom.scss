@@ -181,37 +181,46 @@ a {
 }
 
 .block-button:not(.elementor-widget-button),
-.block-button.elementor-widget-button .elementor-button,
+.block-button.elementor-widget-button,
 .forminator-custom-form .forminator-button {
-	// min-width: rem-calc(350) !important;
-	border-radius: 0 !important;
-	color: $white !important;
-	font-size: rem-calc(34.86) !important;
-	font-weight: $header-font-weight !important;
-	text-align: center !important;
-	line-height: 1 !important;
-	text-transform: uppercase !important;
-	@include breakpoint(medium up){
-		padding: 0.35em 1.4em !important;
-	}
-	@include breakpoint(medium down){
-		padding: 0.35em 0.7em !important;
-	}
-
-	&:not(.alt) {
-		background-color: $odm-red !important;
-
-		&:hover,
-		&:focus {
-			background-color: darken($odm-red, 10%) !important;
+	&,
+	.elementor-button {
+		// min-width: rem-calc(350) !important;
+		border-radius: 0 !important;
+		color: $white !important;
+		font-size: rem-calc(34.86) !important;
+		font-weight: $header-font-weight !important;
+		text-align: center !important;
+		line-height: 1 !important;
+		text-transform: uppercase !important;
+		@include breakpoint(medium up){
+			padding: 0.35em 1.4em !important;
 		}
-	}
-	&.alt {
-		background-color: $odm-dark-blue !important;
+		@include breakpoint(medium down){
+			padding: 0.35em 0.7em !important;
+		}
 
-		&:hover,
-		&:focus {
-			background-color: lighten($odm-dark-blue, 10%) !important;
+		&:not(.alt) {
+			&,
+			.elementor-button {
+				background-color: $odm-red !important;
+
+				&:hover,
+				&:focus {
+					background-color: darken($odm-red, 10%) !important;
+				}
+			}
+		}
+		&.alt {
+			&,
+			.elementor-button {
+				background-color: $odm-dark-blue !important;
+
+				&:hover,
+				&:focus {
+					background-color: lighten($odm-dark-blue, 10%) !important;
+				}
+			}
 		}
 	}
 }
