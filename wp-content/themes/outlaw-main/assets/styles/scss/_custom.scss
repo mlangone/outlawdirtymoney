@@ -294,12 +294,17 @@ a {
 		text-transform: uppercase;
 
 		.menu-item {
-			width: 100%;
+			&:not(.social) {
+				width: 100%;
+			}
 
 			& > a {
 				&:hover,
 				&:focus {
-					color: $odm-red;
+					&,
+					& * {
+						color: $odm-red;
+					}
 				}
 			}
 		}
