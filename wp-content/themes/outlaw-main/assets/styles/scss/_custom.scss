@@ -149,13 +149,13 @@ div#html-1 h3 {
 ======================================*/
 
 html {
-	@include breakpoint(tablet) {
+	@include breakpoint(tablet only) {
 		font-size: 17px;
 	}
-	@include breakpoint(medium) {
+	@include breakpoint(medium only) {
 		font-size: 16px;
 	}
-	@include breakpoint(small) {
+	@include breakpoint(small only) {
 		font-size: 15px;
 	}
 }
