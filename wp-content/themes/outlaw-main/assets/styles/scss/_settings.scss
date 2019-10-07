@@ -72,13 +72,7 @@
 $global-font-size: 18px;
 $global-width: rem-calc(1224);
 $global-lineheight: 1.5;
-$foundation-palette: (
-	primary: #0071CE,
-	secondary: #eeeceb,
-	success: #3adb76,
-	warning: #ffae00,
-	alert: #cc4b37,
-);
+
 $odm-red: #d6202f;
 $odm-blue: $odm-red;// AKA highlight
 $odm-dark-blue: #1b1f2f;
@@ -91,6 +85,15 @@ $light-gray: #e6e6e6;
 $medium-gray: #666666;
 $dark-gray: #8a8a8a;
 $gray: #EFEFEF;
+
+$foundation-palette: (
+	primary: $odm-red,
+	secondary: #eeeceb,
+	success: #3adb76,
+	warning: #ffae00,
+	alert: #cc4b37,
+);
+
 $body-color: $white;
 $body-background: $body-color;
 $body-font-color: $black;
@@ -119,6 +122,7 @@ $print-hrefs: true;
 
 $breakpoints: (
 	small: 0,
+	mobile: 320px,
 	medium: 640px,
 	tablet: 768px,
 	large: 1024px,
@@ -126,7 +130,7 @@ $breakpoints: (
 	xxlarge: 1394px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium tablet large xlarge);
+$breakpoint-classes: (small mobile medium tablet large xlarge);
 
 // 3. The Grid
 // -----------

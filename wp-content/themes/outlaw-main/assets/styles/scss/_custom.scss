@@ -155,8 +155,11 @@ html {
 	@include breakpoint(medium only) {
 		font-size: 16px;
 	}
+	@include breakpoint(mobile only) {
+		font-size: 14px;
+	}
 	@include breakpoint(small only) {
-		font-size: 15px;
+		font-size: 11px;
 	}
 }
 
