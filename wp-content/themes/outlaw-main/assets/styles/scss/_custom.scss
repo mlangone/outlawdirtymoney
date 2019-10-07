@@ -194,10 +194,10 @@ a {
 		line-height: 1 !important;
 		text-transform: uppercase !important;
 		@include breakpoint(medium){
-			padding: 0.35em 1.4em !important;
+			padding: 0.431em 1.4em !important;
 		}
 		@include breakpoint(medium down){
-			padding: 0.35em 0.7em !important;
+			padding: 0.431em 0.7em !important;
 		}
 
 		&:not(.alt) {
@@ -268,6 +268,9 @@ a {
 				display: none;
 			}
 		}
+		.forminator-input {
+			padding: 0.660em !important;
+		}
 	}
 }
 .elementor-location-footer {
@@ -306,7 +309,7 @@ a {
 	}
 	.forminator-custom-form {
 		.forminator-merge-tags {
-			margin-bottom: 3rem;
+			margin-bottom: 3rem !important;
 
 			.hero {
 				display: none;
@@ -314,6 +317,9 @@ a {
 			.footer {
 				margin: 0;
 			}
+		}
+		.forminator-input {
+			padding: 0.819em !important;
 		}
 		#phone-1 {
 			display: none;
@@ -324,17 +330,21 @@ a {
 			flex-wrap: wrap;
 
 			.forminator-row {
-				margin: 0;
+				margin: 0 !important;
 			}
 			.forminator-col {
-				padding: 0;
+				padding: 0 !important;
 			}
 			& > .forminator-row {
 				&:nth-of-type(3) {
 					width: 50%;
+
+					.forminator-input {
+						border-right: 1px solid $odm-red;
+					}
 				}
 				&:nth-of-type(4) {
-					width: 25%;
+					width: 20%;
 				}
 				&:nth-of-type(5) {
 					flex-grow: 1;
@@ -349,7 +359,6 @@ a {
 		font-size: rem-calc(37);
 	}
 	.forminator-input {
-		padding: 0.660em !important;
 		font-size: rem-calc(22) !important;
 		font-weight: 300 !important;
 		text-transform: uppercase;
