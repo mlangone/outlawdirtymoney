@@ -145,8 +145,20 @@ div#html-1 h3 {
 
 
 /*======================================
-=            RepUs upgradez            =
-=======================================*/
+=            RepUs redesign            =
+======================================*/
+
+html {
+	@include breakpoint(tablet) {
+		font-size: 17px;
+	}
+	@include breakpoint(medium) {
+		font-size: 16px;
+	}
+	@include breakpoint(small) {
+		font-size: 15px;
+	}
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
