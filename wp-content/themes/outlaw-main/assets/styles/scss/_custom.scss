@@ -266,6 +266,17 @@ a {
 	}
 }
 
+#page-title {
+	h1 {
+		margin: 0;
+	}
+}
+body.home {
+	#page-title {
+		display: none;
+	}
+}
+
 .elementor-text-editor {
 	/* & > * {
 		line-height: inherit;//?? still need?
