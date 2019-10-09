@@ -172,8 +172,14 @@ h1,
 	font-weight: 300;
 }
 h4,
-.h4 {
+.h4,
+h5,
+.h5 {
 	font-weight: 700;
+}
+h6,
+.h6 {
+	font-weight: 400;
 }
 p {
 	&:last-child {

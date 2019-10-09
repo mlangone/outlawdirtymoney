@@ -163,7 +163,7 @@ $header-styles: (
 		'h3': ('font-size': rem-calc(60)),
 		'h4': ('font-size': rem-calc(57)),
 		'h5': ('font-size': rem-calc(36)),
-		'h6': ('font-size': 1em),
+		'h6': ('font-size': rem-calc(36))
 	)/* ,
 	tablet: (
 		'h1': ('font-size': 4.209rem),
