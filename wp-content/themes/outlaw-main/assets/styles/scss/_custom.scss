@@ -266,16 +266,21 @@ a {
 	.elementor-widget-container {
 		background-color: $odm-red;
 
-		.elementor-image-box-img,
-		.elementor-image-box-title {
-			margin-bottom: 0;
-		}
 		.elementor-image-box-content {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			min-height: 8rem;
 			padding: 1.5rem;
+			@include breakpoint(tablet) {
+				min-height: 8rem;
+			}
+		}
+		.elementor-image-box-title {
+			margin-bottom: 0;
+			
+			a {
+				color: $white;
+			}
 		}
 	}
 
