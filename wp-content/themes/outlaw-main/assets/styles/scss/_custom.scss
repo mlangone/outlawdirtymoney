@@ -446,9 +446,10 @@ body.home {
 		font-weight: 300 !important;
 		text-transform: uppercase;
 	}
-
-	@include breakpoint(tablet) {
-		&.content {
+}
+@include breakpoint(tablet) {
+	.content.elementor-widget {
+		.forminator-custom-form {
 			#name-1,
 			#address-1 {
 				display: flex;
