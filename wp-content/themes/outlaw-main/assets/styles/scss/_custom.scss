@@ -239,7 +239,7 @@ a {
 
 				&:hover,
 				&:focus {
-					background-color: darken($odm-red, 10%) !important;
+					background-color: $odm-red-active !important;
 				}
 			}
 		}
@@ -250,7 +250,7 @@ a {
 
 				&:hover,
 				&:focus {
-					background-color: lighten($odm-dark-blue, 10%) !important;
+					background-color: $odm-dark-blue-active !important;
 				}
 			}
 		}
@@ -260,6 +260,31 @@ a {
 .block-button.elementor-widget-button.wide .elementor-button,
 .forminator-custom-form .forminator-button-submit {
 	width: 100% !important;
+}
+
+.link-image.elementor-widget-image-box {
+	.elementor-widget-container {
+		background-color: $odm-red;
+
+		.elementor-image-box-img,
+		.elementor-image-box-title {
+			margin-bottom: 0;
+		}
+		.elementor-image-box-content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 8rem;
+			padding: 1.5rem;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		.elementor-widget-container {
+			background-color: $odm-red-active;
+		}
+	}
 }
 
 .menu-item.social {

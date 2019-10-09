@@ -74,8 +74,10 @@ $global-width: rem-calc(1224);
 $global-lineheight: 1.5;
 
 $odm-red: #d6202f;
+$odm-red-active: darken($odm-red, 10%);
 $odm-blue: $odm-red;// AKA highlight
 $odm-dark-blue: #1b1f2f;
+$odm-dark-blue-active: lighten($odm-dark-blue, 10%);
 $odm-black: #000;
 $odm-off-black: #383535;
 $odm-off-white: #f4f4f2;
