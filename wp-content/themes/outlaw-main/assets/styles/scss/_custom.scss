@@ -303,7 +303,7 @@ a {
 }
 
 #page-title {
-	margin-bottom: 5rem;
+	margin-bottom: 4rem;
 
 	h1 {
 		margin: 0;
@@ -445,5 +445,42 @@ body.home {
 		font-size: rem-calc(22) !important;
 		font-weight: 300 !important;
 		text-transform: uppercase;
+	}
+
+	@include breakpoint(tablet) {
+		&.content {
+			#name-1,
+			#address-1 {
+				display: flex;
+				flex-wrap: wrap;
+
+				& > .forminator-row {
+					flex-grow: 1;
+				}
+			}
+			#name-1 {
+				& > .forminator-row {
+					&:nth-child(1) {
+						margin-right: 0;
+					}
+					&:nth-child(2) {
+						margin-left: 0;
+					}
+				}
+			}
+			#address-1 {
+				& > .forminator-row {
+					&:nth-child(1) {
+						width: 100%;
+					}
+					&:nth-child(2) {
+						margin-right: 0;
+					}
+					&:nth-child(3) {
+						margin-left: 0;
+					}
+				}
+			}
+		}
 	}
 }
