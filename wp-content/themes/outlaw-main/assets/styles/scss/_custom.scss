@@ -303,6 +303,8 @@ a {
 }
 
 #page-title {
+	margin-bottom: 5rem;
+
 	h1 {
 		margin: 0;
 	}
@@ -319,6 +321,9 @@ body.home {
 	} */
 }
 .elementor-widget-heading {
+	.elementor-widget-container {
+		margin-bottom: -10px;
+	}
 	.elementor-heading-title {
 		margin-bottom: $header-margin-bottom;
 		line-height: $header-lineheight;
